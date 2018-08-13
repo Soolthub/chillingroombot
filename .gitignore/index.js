@@ -5,10 +5,10 @@ const config = require("./config.json");
 
 const prefix = '*';
 
-var load = require("./src/load");
+var load = require("./load");
 load(bot, config);
 
-var track = require("./src/track");
+var track = require("./track");
 track(bot, config);
 
 bot.on('message', function (message){
