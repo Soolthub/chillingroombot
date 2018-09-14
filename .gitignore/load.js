@@ -24,7 +24,7 @@ module.exports = function(client, config) {
 			//console.log("Remarque: Si le message suivant ne dit pas "ASYNC IIFE working!", Vous devez mettre à jour le noeud 7.6.0 ou plus tard");
 			
 			//Infos bot 
-			client.user.setPresence('!chill pour en savoir plus').catch(console.error);
+			client.user.setGame('!chill pour en savoir plus').catch(console.error);
 			console.log("Message le bot joue a !chill");
 			
 			(async () => {
