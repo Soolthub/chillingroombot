@@ -104,19 +104,7 @@ bot.on('message', function (message){
         console.log("Commande ADMIN testée");
         message.guild.channels.find("name", "infos").sendMessage("Commande ADMIN `*admin` testée par " + message.author.toString());
     }
-
-    if (msg === prefix + 'ROLE') {
-        message.delete();
-        if (!message.member.roles.find('name', 'Dieu')) {
-                message.channel.send('Tu as besoin du rôle \`Dieu\` pour utiliser cette commande.');
-                return; 
-            }
-        message.channel.send("L'ensemble des salons textuels et vocaux sont cachés pour une meilleure utilisation du serveur. \n\n```Tu peux donc choisir la façon de t'informer des news et de l'actu du serveur Chilling Room et ainsi bénéficier d'une meilleure visibilité sur le discord. Réponds aux questions suivantes en cliquant sur les émojis sous la question.``` \n\n*Cliques sur une ou plusieurs émotes et ton rôle discord sera mis à jour automatiquement. Recliques dessus pour annulé ton choix. C'est super simple !*");
-        message.channel.send("__**Pour chiller !!!**__\n\n ? | Pour accèder au contenu \n\n\n ??Cliques juste en dessous pour indiquer ta réponse ??")
-        message.channel.send("__**À  quels channels souhaites tu accéder ?**__ \n\n ?? | Pour du partages et des délires \n ?? | Pour chiller entre potes \n ?? | Pour geeker à mort ! \n ?? | **Divers** Salon musique \n ?? | **Divers** Salon jeux vidéo \n ?? | **Divers** Salon séries films \n\n\n ?? Cliques juste en dessous pour indiquer ta réponse ??")
-        message.guild.channels.find("name", "infos").sendMessage("Commande ADMIN `*role` testée par " + message.author.toString());         
-    } 
-
+    
     if (msg.startsWith(prefix + 'PURGE')) {
         async function purge() {
             message.delete();
