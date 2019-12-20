@@ -60,10 +60,9 @@ bot.on('message', function (message){
         .setDescription("Voici les types de rôles!")
         .setColor("#DDFF09")
         .addField("`ready`", "pour avoir le droit de communiquer")
-        .addField("`block`", "te bloque l'accès aux salons")
         .addField("`games`", "pour avoir l'accès aux salons de jeux")
-        .addField("`coin détente`", "pour avoir l'accès au salon textuel coin détente")
-        .addField("`chilling room`", "pour avoir l'accès au salon vocal chilling room")
+        .addField("`chilleur`", "pour avoir l'accès au salon textuel Coin Canap' et pour papoter dans Chilling Room")
+        .addField("`magnéto & jukebox`", "pour avoir l'accès aux salons médias")
         .addField("`Newbie`" , "pour avoir plus de contenu")
         .setFooter("_________infosbulle chillienne_________")
         message.channel.sendMessage(help_embed);
